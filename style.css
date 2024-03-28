@@ -206,8 +206,13 @@ form {
   height: 2rem;
   color: #000;
 }
+form button{
+  margin-right: 10px;
+width:30px;
+}
 input,
 button {
+  padding-left: 10px;
   border: none;
   background-color: var(--white);
   border-radius:20px;
