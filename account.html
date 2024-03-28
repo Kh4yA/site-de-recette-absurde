@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Lien Fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/840e5f51a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lien javascript -->
+    <script src="./script.js" defer></script>
+
+    <title>Galactic-food</title>
+  </head>
+
+  <body class="white-bg">
+    <!-- Header -->
+    <header class="flex space-arround item-center border-shadow">
+      <!-- meni déroulant -->
+      <div id="mySidenav" class="sidenav flex space-arround border-shadow">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <!-- colonne gauche -->
+        <ul class="colonne-gauche flex direction-colomn">
+          <li>
+            <p class="titre-menu">Catégories</p>
+          </li>
+          <li><a href="#">Petit déjeuner</a></li>
+          <li><a href="./Dejeuner.html">Déjeuner</a></li>
+          <li><a href="#">Gouter</a></li>
+          <li><a href="#">Souper</a></li>
+          <li><a href="./menu1.html">Dessert du jour</a></li>
+        </ul>
+        <!-- colonne droite -->
+        <ul class="colonne-right">
+          <li>
+            <p class="titre-menu">Info</p>
+          </li>
+          <li><a href="">les débuts de la cuisine Galactic</a></li>
+          <li><a href="#bio">Bio du chef E.T</a></li>
+          <li><a href="./info.html">Info du jour</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu burger -->
+      <a href="#" id="openBtn">
+        <span id="burger"></span>
+      </a>
+
+      <!-- Logo -->
+      <a href="./index.html">
+        <h1>Galactic-Food</h1>
+      </a>
+
+      <!-- Barre de recherche -->
+      <form action="search" method="GET" class="flex space-between">
+        <input type="text" id="search-bar" placeholder="rechercher..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <!-- Account -->
+      <div class="account">
+        <a href="./account.html" class="flex item-center">
+          <figure class="image is-48x48">
+            <img class="is-rounded" src="./assets/yoda.ico" />
+          </figure>
+          <p>Yoda</p>
+        </a>
+      </div>
+    </header>
+
+    <article class="info border-shadow margin page-menu account" id="account">
+      <h2>Bienvenue Yoda</h2>
+      <div class="cards-info flex space-arround">
+        <img src="./assets/yoda.jpeg" alt="img de cuisine dans la galaxie" />
+        <div class="content-info flex">
+          <h3>Ton historique :</h3>
+          <p>
+            Recette publié : 3 <br />
+            Accessoire préféré : Sabre Laser <br />
+            <br />
+            Ton histoire : <br />
+            <br />
+            Dans une galaxie culinaire lointaine, très lointaine, se trouve chef
+            Yoda, le plus petit grand chef de toute la Bordure Extérieure. Avec
+            sa petite taille et ses oreilles pointues, il manie son fouet
+            lumineux avec une dextérité Jedi et transforme les ingrédients en
+            plats intergalactiquement délicieux. « Hmm, la Force du goût,
+            puissante elle est ! » s'exclame Yodachef en remuant sa soupe
+            stellaire d'un air concentré. Ses recettes sont secrètes, mais il
+            murmure à ses apprentis, « Des épices, essentielles elles sont.
+            Ajouter toujours plus de saveur, tu dois. » Arborant une toque aussi
+            grande que lui, Yodachef jongle avec des légumes flottants grâce à
+            la Force. « Le plat parfait, comme une symphonie, il doit être.
+            Harmonie des saveurs, clé du succès culinaire, elle est. » Et
+            lorsque quelqu'un lui demande la recette, il répond avec sagesse, «
+            Patience, jeune padawan, les saveurs se révéleront avec le temps. »
+            Que la Force de la gastronomie soit avec Yodachef, le Jedi des
+            fourneaux, toujours prêt à faire voyager les papilles vers une
+            galaxie de délices inattendus !
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <footer class="flex direction-colomn padding white-bg">
+      <div>
+        <a href="">A propos</a>
+      </div>
+
+      <div class="social-bar">
+        <a href="http://www.instagram.fr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="http://www.facebook.fr"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="http://ww.linkedin.fr"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="copyright">copyright 2024.© Matcode</div>
+    </footer>
+  </body>
+</html>

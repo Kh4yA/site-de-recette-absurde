@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Lien Fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/840e5f51a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lien javascript -->
+    <script src="./script.js" defer></script>
+
+    <title>Galactic-food</title>
+  </head>
+
+  <body class="white-bg">
+    <!-- Header -->
+    <header class="flex space-arround item-center border-shadow">
+      <!-- meni déroulant -->
+      <div id="mySidenav" class="sidenav flex space-arround border-shadow">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <!-- colonne gauche -->
+        <ul class="colonne-gauche flex direction-colomn">
+          <li>
+            <p class="titre-menu">Catégories</p>
+          </li>
+          <li><a href="#">Petit déjeuner</a></li>
+          <li><a href="./Dejeuner.html">Déjeuner</a></li>
+          <li><a href="#">Gouter</a></li>
+          <li><a href="#">Souper</a></li>
+          <li><a href="./menu1.html">Dessert du jour</a></li>
+        </ul>
+        <!-- colonne droite -->
+        <ul class="colonne-right">
+          <li>
+            <p class="titre-menu">Info</p>
+          </li>
+          <li><a href="">les débuts de la cuisine Galactic</a></li>
+          <li><a href="#bio">Bio du chef E.T</a></li>
+          <li><a href="./info.html">Info du jour</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu burger -->
+      <a href="#" id="openBtn">
+        <span id="burger"></span>
+      </a>
+
+      <!-- Logo -->
+      <a href="./index.html">
+        <h1>Galactic-Food</h1>
+      </a>
+
+      <!-- Barre de recherche -->
+      <form action="search" method="GET" class="flex space-between">
+        <input type="text" id="search-bar" placeholder="rechercher..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <!-- Account -->
+      <div class="account">
+        <a href="./account.html" class="flex item-center">
+          <figure class="image is-48x48">
+            <img class="is-rounded" src="./assets/yoda.ico" />
+          </figure>
+          <p>Yoda</p>
+        </a>
+      </div>
+    </header>
+
+    <article class="info border-shadow margin page-menu" id="Bio">
+      <h2>Histoire de l'art culinaire galactique</h2>
+      <div class="cards-info flex space-arround">
+        <img
+          src="./assets/img-histoire.jpeg"
+          alt="img de cuisine dans la galaxie"
+        />
+        <div class="content-info flex">
+          <h3>L'histoire :</h3>
+          <p>
+            Il était une fois, dans un avenir lointain, où l'humanité avait
+            conquis les étoiles. Les êtres humains avaient établi des colonies
+            sur des planètes lointaines, exploré des systèmes solaires éloignés
+            et échangé des idées et des ressources à travers la galaxie. Avec
+            cette expansion interstellaire, une nouvelle forme de culture
+            émergea : la cuisine galactique. Tout commença lorsqu'une équipe de
+            scientifiques et de chefs talentueux se réunirent sur une station
+            spatiale avancée appelée NovaGastronome. Leur mission était de
+            repousser les limites de la cuisine traditionnelle en utilisant des
+            ingrédients extraterrestres et des technologies innovantes. Les
+            chefs galactiques découvrirent des planètes avec des ressources
+            alimentaires uniques. Des fruits extraterrestres aux saveurs
+            exotiques, des plantes qui réagissaient de manière étonnante à la
+            cuisson, et des créatures marines interstellaires aux qualités
+            gustatives inégalées. Ils créèrent des plats qui transcendaient les
+            frontières terrestres, mariant la science et l'art culinaire. Les
+            technologies avancées facilitèrent également la création de repas
+            surprenants. Des simulateurs de goût virtuels permettaient aux
+            convives de vivre des expériences gustatives uniques, et des
+            imprimantes alimentaires tridimensionnelles transformaient les
+            concepts culinaires en réalité. La cuisine galactique devint un
+            moyen d'expression artistique, un voyage sensoriel à travers les
+            étoiles. Les restaurants galactiques devinrent des destinations
+            prisées, attirant des gourmets venant de différentes planètes. Les
+            chefs galactiques étaient célébrés comme des artistes, et les
+            critiques gastronomiques parcouraient la galaxie pour découvrir les
+            dernières créations culinaires. Ainsi, la cuisine galactique n'était
+            pas seulement une fusion d'ingrédients exotiques, mais aussi une
+            célébration de la diversité interstellaire. Elle représentait
+            l'union des civilisations à travers la passion partagée pour la
+            nourriture et l'innovation. La cuisine galactique devint le symbole
+            d'une galaxie unie par la créativité, la curiosité et le plaisir de
+            partager des repas extraordinaires.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <footer class="flex direction-colomn padding white-bg">
+      <div>
+        <a href="">A propos</a>
+      </div>
+
+      <div class="social-bar">
+        <a href="http://www.instagram.fr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="http://www.facebook.fr"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="http://ww.linkedin.fr"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="copyright">copyright 2024.© Matcode</div>
+    </footer>
+  </body>
+</html>

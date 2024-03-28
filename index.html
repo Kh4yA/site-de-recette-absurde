@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Lien Fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/840e5f51a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lien javascript -->
+    <script src="./script.js" defer></script>
+
+    <title>Galactic-food</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="flex space-arround item-center border-shadow">
+      <!-- meni déroulant -->
+      <!-- Menu burger -->
+      <a href="#" id="openBtn">
+        <span id="burger"></span>
+      </a>
+      <div id="mySidenav" class="sidenav flex space-arround border-shadow">
+        <!-- colonne gauche -->
+        <ul class="colonne-gauche flex direction-colomn">
+          <li>
+            <p class="titre-menu">Catégories</p>
+          </li>
+          <li><a href="#">Petit déjeuner</a></li>
+          <li><a href="./Dejeuner.html">Déjeuner</a></li>
+          <li><a href="#">Gouter</a></li>
+          <li><a href="#">Souper</a></li>
+          <li><a href="./menu1.html">Dessert du jour</a></li>
+        </ul>
+        <!-- colonne droite -->
+        <ul class="colonne-right">
+          <li>
+            <p class="titre-menu">Info</p>
+          </li>
+          <li>
+            <a href="./histoire.html">les débuts de la cuisine Galactic</a>
+          </li>
+          <li><a href="#bio">Bio du chef E.T</a></li>
+          <li><a href="./info.html">Info du jour</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Logo -->
+      <a href="./index.html">
+        <h1>Galactic-Food</h1>
+      </a>
+
+      <!-- Barre de recherche -->
+      <form action="search" method="GET" class="flex space-between">
+        <input type="text" id="search-bar" placeholder="rechercher..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <!-- Account -->
+      <div class="account">
+        <a href="./account.html" class="flex item-center">
+          <figure class="image is-48x48">
+            <img
+              class="is-rounded"
+              src="./assets/yoda.ico"
+              alt="Photo de yoda"
+            />
+          </figure>
+          <p>Yoda</p>
+        </a>
+      </div>
+    </header>
+
+    <!-- section hero -->
+    <section class="hero">
+      <div class="hero-titre flex">
+        <h2>Venez découvrir notre cuisine Galactique</h2>
+        <p class="orange-color">scroll <span>&#8595;</span></p>
+      </div>
+    </section>
+
+    <main>
+      <!-- Section info du jour-->
+      <article class="margin white-bg padding radius10">
+        <div class="container-card flex space-between">
+          <h2>Les infos du jour :</h2>
+          <!-- card 1 -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Ingredient-galactic.jpeg"
+                  alt="Ingredient galactique"
+                />
+              </figure>
+              <h4>Les nouveaux ingrédient.</h4>
+              <br />
+              <p>
+                Éclats de Luminaria: Ces cristaux lumineux, récoltés sur une
+                lointaine planète,
+              </p>
+              <p><a href="info.html" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- card2 -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/dessert-du-jour.jpeg"
+                  alt="dessert du jour"
+                />
+              </figure>
+              <h4>Le dessert du jour.</h4>
+              <p>Nom du Dessert : Éclat de Luminaria.</p>
+              <p>temps de préparation: 3années lumières.</p>
+              <p>coût: 1 fragement de saturne</p>
+              <p><a href="./menu1.html" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- card3 -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/ET-chef-cuisto.jpeg" alt="chef etoilé" />
+              </figure>
+              <h4>Notre chef.</h4>
+              <p>Notre chef E.T Pluton</p>
+              <p><a href="#bio" class="">Lire sa bio...</a></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- carte des menus scroll-->
+      <section class="recette margin white-bg padding radius10">
+        <h2>Notre carte :</h2>
+        <div class="container-card flex space-between scroll">
+          <!-- Carte menu 1 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/dessert-du-jour.jpeg"
+                  alt="dessert du jour"
+                />
+              </figure>
+              <h4>Le dessert du jour.</h4>
+              <p>Nom du Dessert : Éclat de Luminaria.</p>
+              <p>temps de préparation: 3années lumières.</p>
+              <p>coût: 1 fragement de saturne</p>
+              <p><a href="./menu1.html" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 2 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Biscuits-Galactiques-au-Chocolat-etoile.jpeg"
+                  alt="Biscuits-Galactiques-au-Chocolat-Etoile"
+                />
+              </figure>
+              <h4>Dessert</h4>
+              <p>Biscuits-Galactiques-au-Chocolat-Etoile.</p>
+              <p>temps de préparation: 1.5 années lumières.</p>
+              <p>coût: 4 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+          <!-- Carte menu 3 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Burger-Galactique-aux-Legumes-Interdimensionnels.jpeg"
+                  alt="Burger-Galactique-aux-Legumes-Interdimensionnels"
+                />
+              </figure>
+              <h4>Plat</h4>
+              <p>Burger-Galactique-aux-Legumes-Interdimensionnels</p>
+              <p>temps de préparation: 0.5 années lumières.</p>
+              <p>coût: 2 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 4 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src=".//assets/Galaxie-de-Spaghettis-aux-Boulettes-Extraterrestres.jpeg"
+                  alt="Galaxie-de-Spaghettis-aux-Boulettes-Extraterrestres"
+                />
+              </figure>
+              <h4>Plat</h4>
+              <p>Galaxie-de-Spaghettis-aux-Boulettes-Extraterrestres</p>
+              <p>temps de préparation: 1années lumières.</p>
+              <p>coût: 1.5 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 5 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Gateau-Lune-a-la-Creme-d'Asteroides.jpeg"
+                  alt="Gateau-Lune-a-la-Creme-d'astéroides"
+                />
+              </figure>
+              <h4>Dessert</h4>
+              <p>Gateau-Lune-a-la-Creme-d'asteroides</p>
+              <p>temps de préparation: 3années lumières.</p>
+              <p>coût: 1 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 6 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Pizza-Extraterrestre-aux-Fromages-Interstellaires.jpeg"
+                  alt="Pizza-Extraterrestre-aux-Fromages-Interstellaires"
+                />
+              </figure>
+              <h4>Plat</h4>
+              <p>Pizza-Extraterrestre-aux-Fromages-Interstellaires</p>
+              <p>temps de préparation: 4années lumières.</p>
+              <p>coût: 5 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 7 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Pasta-UFO-Carbonara.jpeg"
+                  alt="Pasta-UFO-Carbonara"
+                />
+              </figure>
+              <h4>Plat</h4>
+              <p>Pasta-UFO-Carbonara</p>
+              <p>temps de préparation: 2 années lumières.</p>
+              <p>coût: 1.3 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 8 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Poisson-Cosmiquee-n-Papillote.jpeg"
+                  alt="Poisson-Cosmiquee-n-Papillote"
+                />
+              </figure>
+              <h4>Poisson</h4>
+              <p>Poisson-Cosmiquee-n-Papillote</p>
+              <p>temps de préparation: 5 années lumières.</p>
+              <p>coût: 2,4 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 9 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Salade-de-Constellations-Etincelantes.jpeg"
+                  alt="Salade-de-Constellations-Etincelantes"
+                />
+              </figure>
+              <h4>Salade</h4>
+              <p>Salade-de-Constellations-Etincelantes</p>
+              <p>temps de préparation: 0,5 années lumières.</p>
+              <p>coût: 0,7 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 10 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/Smoothie-Big-Bang.jpeg" alt="" />
+              </figure>
+              <h4>Dessert</h4>
+              <p>Smoothie-Big-Bang</p>
+              <p>temps de préparation: 0,3 années lumières.</p>
+              <p>coût: 0,2 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+
+          <!-- Carte menu 11 -->
+          <div class="card carte-menu">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./assets/Tarte-Arc-en-ciel-Extraterrestre.jpeg"
+                  alt=""
+                />
+              </figure>
+              <h4>Dessert</h4>
+              <p>Tarte-Arc-en-ciel-Extraterrestre</p>
+              <p>temps de préparation: 2,3 années lumières.</p>
+              <p>coût: 1,2 fragement de saturne</p>
+              <p><a href="" class="">Lire la suite...</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section info du chef -->
+      <article class="info border-shadow margin" id="bio">
+        <h2>Bio du chef</h2>
+        <div class="cards-info flex space-arround">
+          <img
+            src="./assets/ET-chef-cuisto.jpeg"
+            alt="Photo de ET extra terrestre en chef cuisto"
+          />
+          <div class="content-info flex">
+            <h3>Son histoire:</h3>
+            <p>
+              Il y a des millénaires, bien avant que les humains n'aient exploré
+              les étoiles, il existait une petite planète du nom de Gastrona,
+              située à la périphérie de la Voie Lactée. Sur Gastrona, la vie
+              était centrée autour de la cuisine et de la culture alimentaire.
+              Les habitants de cette planète étaient des passionnés de saveurs,
+              d'arômes et de découvertes culinaires. Un jour, un jeune chef
+              visionnaire nommé E.T Culinae rêva de repousser les limites de la
+              cuisine traditionnelle. Elle était fascinée par l'idée d'explorer
+              d'autres mondes pour découvrir de nouveaux ingrédients et
+              techniques culinaires. Malgré les doutes de ses pairs, Stella
+              décida de construire un vaisseau spatial adapté à la gastronomie,
+              le "Gourmet Explorer". Accompagnée d'une équipe hétéroclite de
+              chefs, scientifiques alimentaires et aventuriers, Stella entreprit
+              un voyage interstellaire à la recherche des saveurs
+              extraterrestres. Le Gourmet Explorer traversa des nébuleuses
+              parfumées, échappa à des pluies d'épices interstellaires, et
+              découvrit des planètes aux ressources alimentaires
+              extraordinaires. Sur une planète lointaine appelée Savorion Prime,
+              Stella rencontra des créatures qui produisaient une sève sucrée
+              aux notes de caramel et de vanille. Elle cueillit des fruits
+              lumineux sur la planète Radiantia, qui ajoutaient une touche
+              mystique à ses plats. À chaque nouvelle découverte, l'équipage du
+              Gourmet Explorer expérimentait et innovait, créant des plats qui
+              dépassaient l'imagination. Les exploits culinaires de Stella
+              commencèrent à se répandre à travers la galaxie. Des chefs
+              d'autres planètes vinrent apprendre de ses techniques, et une
+              communauté interstellaire de passionnés de cuisine commença à
+              émerger. Des concours culinaires interplanétaires furent
+              organisés, et la cuisine galactique devint un phénomène célèbre.
+              L'équipage du Gourmet Explorer, avec Stella en tête, retourna sur
+              Gastrona comme des héros. Ils partagèrent leurs découvertes,
+              introduisant de nouveaux ingrédients et techniques dans la cuisine
+              locale. Gastrona devint le centre névralgique de la cuisine
+              galactique, attirant des chefs et des gourmets de toutes les
+              parties de la Voie Lactée. Ainsi, grâce à l'audace de Stella
+              Culinae et de son équipage, la cuisine galactique naquit, reliant
+              des mondes à travers le plaisir partagé de la gastronomie et de la
+              créativité culinaire. Et l'aventure interstellaire de la cuisine
+              ne faisait que commencer, promettant des saveurs inexplorées et
+              des expériences gustatives sans fin.
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="flex direction-colomn padding white-bg">
+      <div>
+        <a href="">A propos</a>
+      </div>
+
+      <div class="social-bar">
+        <a href="http://www.instagram.fr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="http://www.facebook.fr"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="http://ww.linkedin.fr"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="copyright">copyright 2024.© Matcode</div>
+    </footer>
+  </body>
+</html>

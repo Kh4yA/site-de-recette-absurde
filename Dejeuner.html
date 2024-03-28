@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Lien Fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/840e5f51a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lien javascript -->
+    <script src="./script.js" defer></script>
+
+    <title>Galactic-food</title>
+  </head>
+
+  <body class="white-bg">
+    <!-- Header -->
+    <header class="flex space-arround item-center border-shadow">
+      <!-- meni déroulant -->
+      <div id="mySidenav" class="sidenav flex space-arround border-shadow">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <!-- colonne gauche -->
+        <ul class="colonne-gauche flex direction-colomn">
+          <li>
+            <p class="titre-menu">Catégories</p>
+          </li>
+          <li><a href="#">Petit déjeuner</a></li>
+          <li><a href="#">Déjeuner</a></li>
+          <li><a href="#">Gouter</a></li>
+          <li><a href="#">Souper</a></li>
+          <li><a href="./menu1.html">Dessert du jour</a></li>
+        </ul>
+        <!-- colonne droite -->
+        <ul class="colonne-right">
+          <li>
+            <p class="titre-menu">Info</p>
+          </li>
+          <li><a href="">les débuts de la cuisine Galactic</a></li>
+          <li><a href="#bio">Bio du chef E.T</a></li>
+          <li><a href="./info.html">Info du jour</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu burger -->
+      <a href="#" id="openBtn">
+        <span id="burger"></span>
+      </a>
+
+      <!-- Logo -->
+      <a href="./index.html">
+        <h1>Galactic-Food</h1>
+      </a>
+
+      <!-- Barre de recherche -->
+      <form action="search" method="GET" class="flex space-between">
+        <input type="text" id="search-bar" placeholder="rechercher..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <!-- Account -->
+      <div class="account">
+        <a href="./account.html" class="flex item-center">
+          <figure class="image is-48x48">
+            <img class="is-rounded" src="./assets/yoda.ico" />
+          </figure>
+          <p>Yoda</p>
+        </a>
+      </div>
+    </header>
+
+    <!-- Les souper -->
+
+    <article class="info border-shadow margin page-menu" id="Bio">
+      <h2>Spaghettis aux Boulettes Extraterrestres</h2>
+      <div class="cards-info flex space-arround">
+        <img
+          src="./assets/Galaxie-de-Spaghettis-aux-Boulettes-Extraterrestres.jpeg"
+          alt="Galaxie-de-Spaghettis-aux-Boulettes-Extraterrestres"
+        />
+        <div class="content-info flex">
+          <h3>La recette :</h3>
+          <p>
+            temps de préparation : 2 années lumières <br />
+            coût: 1.3 fragement de saturne <br />
+            <br />
+            Ingrédients : <br />
+            <br />
+            250 g de spaghettis interstellaires<br />
+            1 tasse de sauce tomate stellaire<br />
+            12 boulettes d'alien (faites de viande ou de substituts
+            végétariens)<br />
+            1/2 tasse de fromage intergalactique râpé<br />
+            Poussière d'étoiles (herbes fraîches, comme le basilic, pour la
+            garniture)<br />
+            Huile d'olive cosmique<br />
+            Sel et poivre interdimensionnels, selon le goût<br /><br />
+            Instructions :<br />
+            <br />
+            Faites cuire les spaghettis interstellaires selon les instructions
+            de l'emballage dans de l'eau salée, jusqu'à ce qu'ils soient al
+            dente. Égouttez-les et réservez. Dans une poêle intergalactique,
+            faites chauffer de l'huile d'olive cosmique. Ajoutez les boulettes
+            d'alien et faites-les cuire jusqu'à ce qu'elles soient bien dorées
+            de tous les côtés. Versez la sauce tomate stellaire sur les
+            boulettes et laissez mijoter à feu doux jusqu'à ce qu'elles soient
+            bien imprégnées de saveurs cosmiques. Disposez les spaghettis
+            interstellaires sur des assiettes galactiques, placez les boulettes
+            d'alien sur le dessus, et versez la sauce tomate stellaire
+            généreusement. Saupoudrez de fromage intergalactique râpé pour créer
+            une galaxie de saveurs. Garnissez avec de la poussière d'étoiles
+            (herbes fraîches) pour une touche finale. Servez ces spaghettis
+            cosmiques avec un sourire interplanétaire !
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <footer class="flex direction-colomn padding white-bg">
+      <div>
+        <a href="">A propos</a>
+      </div>
+
+      <div class="social-bar">
+        <a href="http://www.instagram.fr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="http://www.facebook.fr"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="http://ww.linkedin.fr"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="copyright">copyright 2024.© Matcode</div>
+    </footer>
+  </body>
+</html>

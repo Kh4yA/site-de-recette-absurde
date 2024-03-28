@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Lien Fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/840e5f51a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lien javascript -->
+    <script src="./script.js" defer></script>
+
+    <title>Galactic-food</title>
+  </head>
+
+  <body class="white-bg">
+    <!-- Header -->
+    <header class="flex space-arround item-center border-shadow">
+      <!-- meni déroulant -->
+      <div id="mySidenav" class="sidenav flex space-arround border-shadow">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <!-- colonne gauche -->
+        <ul class="colonne-gauche flex direction-colomn">
+          <li>
+            <p class="titre-menu">Catégories</p>
+          </li>
+          <li><a href="#">Petit déjeuner</a></li>
+          <li><a href="./Dejeuner.html">Déjeuner</a></li>
+          <li><a href="#">Gouter</a></li>
+          <li><a href="#">Souper</a></li>
+          <li><a href="./menu1.html">Dessert du jour</a></li>
+        </ul>
+        <!-- colonne droite -->
+        <ul class="colonne-right">
+          <li>
+            <p class="titre-menu">Info</p>
+          </li>
+          <li><a href="">les débuts de la cuisine Galactic</a></li>
+          <li><a href="#bio">Bio du chef E.T</a></li>
+          <li><a href="./info.html">Info du jour</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu burger -->
+      <a href="#" id="openBtn">
+        <span id="burger"></span>
+      </a>
+
+      <!-- Logo -->
+      <a href="./index.html">
+        <h1>Galactic-Food</h1>
+      </a>
+
+      <!-- Barre de recherche -->
+      <form action="search" method="GET" class="flex space-between">
+        <input type="text" id="search-bar" placeholder="rechercher..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <!-- Account -->
+      <div class="account">
+        <a href="./account.html" class="flex item-center">
+          <figure class="image is-48x48">
+            <img class="is-rounded" src="./assets/yoda.ico" />
+          </figure>
+          <p>Yoda</p>
+        </a>
+      </div>
+    </header>
+
+    <article class="info border-shadow margin page-menu" id="Bio">
+      <h2>Éclat de Luminaria Ingrédients intergalactiques</h2>
+      <div class="cards-info flex space-arround">
+        <img
+          src="./assets/dessert-du-jour.jpeg"
+          alt="Photo de ET extra terrestre en chef cuisto"
+        />
+        <div class="content-info flex">
+          <h3>La recette :</h3>
+          <p>
+            Ingrédients intergalactiques : <br />
+            Étoiles de Sucre Cristallisé - des petites étoiles comestibles
+            sucrées pour la décoration. <br />
+            Crème Galactique de Luminaria - une crème légère et aérienne infusée
+            avec des éclats de Luminaria pour une touche lumineuse. <br />
+            Poudre d'Éclat Stellaire - une poudre brillante extraite de minéraux
+            cosmiques, ajoutant une lueur subtile et une saveur unique. <br />
+            Fruits Nebula en Gelée - une gelée colorée et fruitée réalisée à
+            partir des baies galaxiales pour une explosion de saveurs.<br />
+            Cœur de NovaFruit - un fruit interstellaire dont le centre est
+            composé d'un nectar sucré et pétillant.<br />
+            GalaxyCrisps - des fines tuiles croustillantes faites de céréales
+            spéciales récoltées sur une planète lointaine.<br /><br />
+            Préparation :<br />
+            Préparez la Crème Galactique de Luminaria :<br />
+            Fouettez une tasse de crème stellaire jusqu'à obtenir des pics
+            fermes.<br />
+            Incorporez délicatement la Poudre d'Éclat Stellaire pour ajouter une
+            lueur subtile.<br />
+            Réservez au frais.<br />
+            Assemblez la Base :<br />
+            Déposez une cuillère à soupe de GalaxyCrisps au fond de chaque
+            verrine pour créer une base croustillante.<br />
+            Ajoutez les Couches :<br />
+            Déposez une couche de la Crème Galactique de Luminaria sur la base
+            croustillante.<br />
+            Ajoutez une cuillère à soupe de Fruits Nebula en Gelée pour une
+            explosion de saveurs.<br />
+            Placez délicatement un Cœur de NovaFruit au centre de chaque
+            verrine.<br />
+            Décorez et Servez :<br />
+            <br />
+            Saupoudrez les Étoiles de Sucre Cristallisé sur le dessus pour une
+            touche esthétique<br />
+            Servez les Éclats de Luminaria bien frais, prêts à être dégustés
+            lors de votre voyage culinaire intergalactique.<br />
+            Ce dessert galactique, Éclat de Luminaria, offre une combinaison
+            exquise de textures croustillantes, de saveurs fruitées, et de
+            touches lumineuses. Chaque bouchée est une aventure sensorielle,
+            transportant ceux qui le dégustent au-delà des frontières de
+            l'espace. Que cette création interstellaire éclaire vos papilles et
+            illumine votre palais
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <footer class="flex direction-colomn padding white-bg">
+      <div>
+        <a href="">A propos</a>
+      </div>
+
+      <div class="social-bar">
+        <a href="http://www.instagram.fr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="http://www.facebook.fr"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="http://ww.linkedin.fr"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="copyright">copyright 2024.© Matcode</div>
+    </footer>
+  </body>
+</html>
